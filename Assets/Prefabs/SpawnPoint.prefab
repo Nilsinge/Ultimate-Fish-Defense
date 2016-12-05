@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &183724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 441474}
+  - 114: {fileID: 11479852}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &441474
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183724}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 90, y: 0, z: 4.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11479852
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fe37707b003ec549bad115c5582cc28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waves:
+  - lightShips: 0
+    mediumShips: 0
+    boss1: 0
+    boss2: 0
+    pirateShips: 1
+  - lightShips: 2
+    mediumShips: 1
+    boss1: 0
+    boss2: 0
+    pirateShips: 0
+  - lightShips: 3
+    mediumShips: 2
+    boss1: 0
+    boss2: 0
+    pirateShips: 0
+  - lightShips: 3
+    mediumShips: 3
+    boss1: 0
+    boss2: 0
+    pirateShips: 0
+  - lightShips: 0
+    mediumShips: 4
+    boss1: 1
+    boss2: 0
+    pirateShips: 0
+  lightShip: {fileID: 169800, guid: 77702d676ba4f324f85000479ca65e7a, type: 2}
+  mediumShip: {fileID: 130196, guid: e697b0ec9679aef46b399267b837b36c, type: 2}
+  boss_1: {fileID: 186698, guid: 39cc5873d1b5b5a4896842c6ca411f99, type: 2}
+  pirateShip: {fileID: 155464, guid: f507f7437f2985f4fa587b1cdb62a68a, type: 2}
+  boss_2: {fileID: 128078, guid: d74a360a97e83254c871ada27bf35d34, type: 2}
+  waveDelay: 30
+  startFirstWave: 10
+  spawnDelay: 1.3
+  duplicateSpawnPoint: 0
+  currentWave: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 183724}
+  m_IsPrefabParent: 1
